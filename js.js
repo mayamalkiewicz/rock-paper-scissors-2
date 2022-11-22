@@ -47,22 +47,22 @@ function thePlay(computer, player) {
 
 
         if (computer === player) {
-            console.log("TIE!");
+            return "TIE!";
         } else if (computer === "ROCK" && player === "PAPER") { 
-            console.log("You won!");
+            return "You won!";
         } else if (computer === "SCISSORS" && player === "ROCK") {
-            console.log("You won!");
+            return "You won!";
         } else if (computer === "SCISSORS" && player === "PAPER") {
-            console.log("Computer won!");
+            return "Computer won!";
         } else if (computer === "ROCK" && player === "SCISSORS") {
-            console.log("Computer won!");
+            return "Computer won!";
         } else if (computer === "PAPER" && player === "SCISSORS") {
-            console.log("You won!");
+            return "You won!";
         } else if (computer === "PAPER" && player === "ROCK") {
-            console.log("Computer won!");
+            return "Computer won!";
         } else {
-            console.log("You won!");
+            return "You won!";
         }
 }
 
-thePlay(computer, player);
+console.log(thePlay(computer, player));
